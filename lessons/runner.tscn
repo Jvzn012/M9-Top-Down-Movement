@@ -41,30 +41,28 @@ shader_parameter/line_thickness = 4.0
 viewport_path = NodePath("SubViewport")
 
 [node name="Runner" type="CharacterBody2D"]
-position = Vector2(0, 26)
 motion_mode = 1
 script = ExtResource("1_h1hi2")
-max_speed = null
-acceleration = null
-deccleration = null
 
 [node name="Shadow" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 0.15686275)
-position = Vector2(3.3881318e-21, -6.999998)
+position = Vector2(-5.74e-42, -15)
 scale = Vector2(0.5130208, 0.48828122)
 texture = ExtResource("2_2nvb5")
 
 [node name="Dust" type="GPUParticles2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(0, 5)
 emitting = false
 texture = ExtResource("2_x5rx3")
 process_material = SubResource("ParticleProcessMaterial_28xeg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -31)
+position = Vector2(0, -26)
 shape = SubResource("CircleShape2D_h1hi2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 5)
 
 [node name="SubViewport" type="SubViewport" parent="."]
 transparent_bg = true
@@ -77,5 +75,5 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_cl8lt")
-position = Vector2(1, -59)
+position = Vector2(1, -54)
 texture = SubResource("ViewportTexture_d46nv")
