@@ -62,4 +62,5 @@ metadata/_custom_type_script = "uid://57e8080cpukf"
 metadata/_edit_use_anchors_ = true
 
 [node name="PauseScreen" parent="CanvasLayer" instance=ExtResource("9_tpjcj")]
+process_mode = 3
 metadata/_edit_use_anchors_ = true
